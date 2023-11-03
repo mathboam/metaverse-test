@@ -27,8 +27,13 @@ If you are developing a production application, we recommend updating the config
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 <!-- Application Configuration -->
+To start the application locally, the development packages have to be installed by running the command below.
 
-A .env file is needed to run this application.
+yarn install 
+or
+yarn
+
+A .env file is also needed to run this application.
 Inside the .env file, add the text below
 
 VITE_SOCKET_URL=wss://frontend-test-api.mvm-tech.xyz/ws?token=
@@ -36,4 +41,6 @@ VITE_API_URL=https://frontend-test-api.mvm-tech.xyz/api/
 
 This will provide the application with the neccessary environment variables.
 
+After that, run the below command in your terminal to start the application locally
 
+yarn dev
