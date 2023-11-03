@@ -25,3 +25,15 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+<!-- Application Configuration -->
+
+A .env file is needed to run this application.
+Inside the .env file, add the text below
+
+VITE_SOCKET_URL=wss://frontend-test-api.mvm-tech.xyz/ws?token=
+VITE_API_URL=https://frontend-test-api.mvm-tech.xyz/api/
+
+This will provide the application with the neccessary environment variables.
+
+
